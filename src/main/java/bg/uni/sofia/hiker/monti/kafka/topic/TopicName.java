@@ -1,4 +1,4 @@
-package bg.uni.sofia.hiker.monti.kafka;
+package bg.uni.sofia.hiker.monti.kafka.topic;
 
 public enum TopicName {
     SUGGESTED_PLACES("suggested-places-v1");

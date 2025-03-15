@@ -1,4 +1,4 @@
-package bg.uni.sofia.hiker.monti.kafka;
+package bg.uni.sofia.hiker.monti.kafka.topic;
 
 import org.apache.kafka.clients.admin.Admin;
 import org.apache.kafka.clients.admin.AdminClientConfig;
@@ -21,7 +21,6 @@ public class TopicInitializer {
         Admin admin = Admin.create(props);
 
         for (TopicName topicName : TopicName.values()) {
-            System.out.println("hello");
             createCommandTopic(admin, topicName.getValue());
         }
 
