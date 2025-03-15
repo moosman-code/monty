@@ -3,6 +3,7 @@ package bg.uni.sofia.hiker.monti.controller;
 import java.util.List;
 
 import bg.uni.sofia.hiker.monti.model.ModelTemplate;
+import bg.uni.sofia.hiker.monti.service.ServiceTemplate;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang3.tuple.Pair;
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 class ControllerTemplate {
 
+    private final ServiceTemplate serviceTemplate = new ServiceTemplate();
     private final ObjectMapper objectMapper = new ObjectMapper();
     //private final EmployeeRepository repository;
 
@@ -41,14 +43,12 @@ class ControllerTemplate {
         }
     }
 
-    @GetMapping("/gemini-test")
+    @GetMapping("/openai-test")
     public ResponseEntity<String> geminiTest() {
-        ModelTemplate models = new ModelTemplate("1", "Черни връх", "Планина", 11.123, Pair.of(12.12, 12.12));
-
-
+        String response = serviceTemplate.getChatResponse("Кажи ми интересен факт за Черни връх");
 
         try {
-            String json = objectMapper.writeValueAsString(models); // Convert List to JSON
+            String json = objectMapper.writeValueAsString(response); // Convert List to JSON
             return ResponseEntity.ok(json);
         } catch (JsonProcessingException e) {
             return ResponseEntity.internalServerError().body("Error converting to JSON");
