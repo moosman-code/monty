@@ -9,5 +9,4 @@ public class MontiApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MontiApplication.class, args);
 	}
-
 }

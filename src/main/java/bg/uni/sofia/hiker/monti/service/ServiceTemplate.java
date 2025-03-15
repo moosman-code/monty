@@ -1,5 +1,9 @@
 package bg.uni.sofia.hiker.monti.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.env.Environment;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
@@ -11,7 +15,15 @@ import java.util.Map;
 @Service
 public class ServiceTemplate {
 
+    private Environment environment;
+
     private final RestTemplate restTemplate = new RestTemplate();
+
+    public ServiceTemplate() {
+        // Load Spring Context
+        ApplicationContext context = new ClassPathXmlApplicationContext();
+        this.environment = context.getEnvironment();
+    }
 
     public String getChatResponse(String message) {
         Map<String, Object> requestBody = Map.of(
@@ -23,9 +35,14 @@ public class ServiceTemplate {
                 "max_tokens", 500
         );
 
+        String apiKey = environment.getProperty("OPENAI_API_KEY");
+        if (apiKey == null) {
+            throw new RuntimeException("API Key is missing!");
+        }
+
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
-        headers.set("Authorization", "Bearer " + "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"); // ✅ Correct way to set API Key
+        headers.set("Authorization", "Bearer " + apiKey);
 
         HttpEntity<Map<String, Object>> requestEntity = new HttpEntity<>(requestBody, headers);
         ResponseEntity<Map> responseEntity = restTemplate.exchange("https://api.openai.com/v1/chat/completions", HttpMethod.POST, requestEntity, Map.class);

@@ -8,13 +8,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 class ControllerTemplate {
@@ -44,8 +38,8 @@ class ControllerTemplate {
     }
 
     @GetMapping("/openai-test")
-    public ResponseEntity<String> geminiTest() {
-        String response = serviceTemplate.getChatResponse("Кажи ми интересен факт за Черни връх");
+    public ResponseEntity<String> openaiTest(@RequestHeader("name") String headerValue) {
+        String response = serviceTemplate.getChatResponse("Кажи ми интересен факт за " + headerValue);
 
         try {
             String json = objectMapper.writeValueAsString(response); // Convert List to JSON
