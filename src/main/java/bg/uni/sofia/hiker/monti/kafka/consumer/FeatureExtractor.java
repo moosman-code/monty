@@ -19,23 +19,27 @@ import static bg.uni.sofia.hiker.monti.kafka.topic.TopicName.FEATURES_V1;
 
 public class FeatureExtractor {
 
+    private Set<Feature> cachedFeatures = new HashSet<>();
+
     public Set<Feature> extract() {
+        if (cachedFeatures.isEmpty()) {
+            KafkaConsumer<String, Feature> consumer = getStringPeakKafkaConsumer();
+            consumer.subscribe(Collections.singletonList(FEATURES_V1.getValue()));
+            Set<Feature> result = new HashSet<>();
 
-        KafkaConsumer<String, Feature> consumer = getStringPeakKafkaConsumer();
-
-        consumer.subscribe(Collections.singletonList(FEATURES_V1.getValue()));
-        Set<Feature> result = new HashSet<>();
-
-        try {
-            ConsumerRecords<String, Feature> records = consumer.poll(Duration.ofMillis(30000));
-            for (ConsumerRecord<String, Feature> record : records) {
-                result.add(record.value());
+            try {
+                ConsumerRecords<String, Feature> records = consumer.poll(Duration.ofMillis(10000));
+                for (ConsumerRecord<String, Feature> record : records) {
+                    result.add(record.value());
+                }
+            } finally {
+                consumer.close();
             }
-        } finally {
-            consumer.close();
+
+            this.cachedFeatures = result;
         }
 
-        return result;
+        return cachedFeatures;
     }
 
     private static KafkaConsumer<String, Feature> getStringPeakKafkaConsumer() {
