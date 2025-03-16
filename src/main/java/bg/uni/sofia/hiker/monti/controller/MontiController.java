@@ -15,7 +15,7 @@ public class MontiController {
 
     private final PeakExtractor peakExtractor = new PeakExtractor();
 
-    @GetMapping("/hello")
+    @GetMapping("/features")
     public Set<Peak> getFeatures() {
         return peakExtractor.extract();
 
