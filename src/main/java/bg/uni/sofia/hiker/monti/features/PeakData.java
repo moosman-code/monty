@@ -1,4 +1,4 @@
-package bg.uni.sofia.hiker.monti.peaks;
+package bg.uni.sofia.hiker.monti.features;
 
 import java.util.List;
 

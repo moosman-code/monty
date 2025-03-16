@@ -1,0 +1,67 @@
+{
+  "features": [
+    {
+      "@id": "node/274090337",
+      "name": "h. Trendafila",
+      "type": "alpine_hut",
+      "coordinates": [23.2248564, 42.5948516],
+      "fact": ""
+    },
+    {
+      "@id": "node/274090342",
+      "name": "h. Severina",
+      "type": "alpine_hut",
+      "coordinates": [23.3184336, 42.5873953],
+      "fact": ""
+    },
+    {
+      "@id": "node/1906562254",
+      "name": "h. Artistite",
+      "type": "alpine_hut",
+      "coordinates": [23.2321731, 42.6031973],
+      "fact": ""
+    },
+    {
+      "@id": "node/2570450275",
+      "name": "PD Radio",
+      "type": "alpine_hut",
+      "coordinates": [23.2328341, 42.603578],
+      "fact": ""
+    },
+    {
+      "@id": "node/3911059351",
+      "name": "h. Ofeliite",
+      "type": "alpine_hut",
+      "coordinates": [23.2349593, 42.5980421],
+      "fact": ""
+    },
+    {
+      "@id": "node/3911083559",
+      "name": "h. Pancho Tomov",
+      "type": "alpine_hut",
+      "coordinates": [23.2336167, 42.6022753],
+      "fact": ""
+    },
+    {
+      "@id": "node/4029040909",
+      "name": "Kamenno zdanie",
+      "type": "alpine_hut",
+      "coordinates": [23.2600422, 42.6112075],
+      "fact": ""
+    },
+    {
+      "@id": "node/4641743876",
+      "name": "h. Filharmoniya",
+      "type": "alpine_hut",
+      "coordinates": [23.2218007, 42.5915413],
+      "fact": ""
+    },
+    {
+      "@id": "node/8779907627",
+      "name": "h. Planinec",
+      "type": "alpine_hut",
+      "coordinates": [23.2398157, 42.6243002],
+      "fact": ""
+    }
+  ]
+}

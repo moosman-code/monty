@@ -14,7 +14,7 @@ import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.common.serialization.StringDeserializer;
 
 import bg.uni.sofia.hiker.monti.kafka.serde.JsonDeserializer;
-import bg.uni.sofia.hiker.monti.peaks.Peak;
+import bg.uni.sofia.hiker.monti.features.Peak;
 
 public class PeakExtractor {
 

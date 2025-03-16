@@ -11,7 +11,7 @@ import org.apache.kafka.clients.admin.AdminClientConfig;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.common.config.TopicConfig;
 
-import bg.uni.sofia.hiker.monti.peaks.JsonFileToFeature;
+import bg.uni.sofia.hiker.monti.features.JsonFileToFeature;
 
 public class TopicInitializer {
 
@@ -33,7 +33,7 @@ public class TopicInitializer {
             for (TopicName topicName : TopicName.values()) {
                 if (!topics.contains(topicName)) {
                     createCommandTopic(admin, topicName.getValue());
-                    jsonFileToFeature.initTopicData(topicName);
+                    jsonFileToFeature.initTopicData();
                 }
             }
 

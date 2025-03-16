@@ -1,4 +1,4 @@
-package bg.uni.sofia.hiker.monti.peaks;
+package bg.uni.sofia.hiker.monti.features;
 
 import java.io.File;
 import java.util.List;
@@ -13,19 +13,13 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import bg.uni.sofia.hiker.monti.kafka.serde.JsonSerializer;
 import bg.uni.sofia.hiker.monti.kafka.topic.TopicName;
-import static bg.uni.sofia.hiker.monti.kafka.topic.TopicName.PEAKS_V1;
+import static bg.uni.sofia.hiker.monti.kafka.topic.TopicName.FEATURES_V1;
 
 public class JsonFileToFeature {
 
     public static final String BOOTSTRAP_SERVER = "kafka:9092";
 
-    public void initTopicData(TopicName topicName) {
-        switch (topicName) {
-            case PEAKS_V1 -> initPeakData();
-        }
-    }
-
-    public void initPeakData() {
+    public void initTopicData() {
         Properties producerProps = getProducerProperties(JsonSerializer.class.getName());
         KafkaProducer<String, Peak> producer = new KafkaProducer<>(producerProps);
 
@@ -39,7 +33,7 @@ public class JsonFileToFeature {
 
             for (Peak peak : peaks) {
                 System.out.println("Sending: " + peak);
-                ProducerRecord<String, Peak> record = new ProducerRecord<>(PEAKS_V1.getValue(), peak.id(), peak);
+                ProducerRecord<String, Peak> record = new ProducerRecord<>(FEATURES_V1.getValue(), peak.getId(), peak);
                 producer.send(record);
             }
 
