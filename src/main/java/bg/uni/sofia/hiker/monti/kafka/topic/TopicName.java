@@ -1,7 +1,7 @@
 package bg.uni.sofia.hiker.monti.kafka.topic;
 
 public enum TopicName {
-    SUGGESTED_PLACES("suggested-places-v1");
+    FEATURES_V1("features-v1");
 
     private final String value;
 
