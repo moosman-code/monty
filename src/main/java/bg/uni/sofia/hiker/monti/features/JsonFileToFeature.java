@@ -12,7 +12,6 @@ import org.apache.kafka.common.serialization.StringSerializer;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import bg.uni.sofia.hiker.monti.kafka.serde.JsonSerializer;
-import bg.uni.sofia.hiker.monti.kafka.topic.TopicName;
 import static bg.uni.sofia.hiker.monti.kafka.topic.TopicName.FEATURES_V1;
 
 public class JsonFileToFeature {
@@ -21,22 +20,36 @@ public class JsonFileToFeature {
 
     public void initTopicData() {
         Properties producerProps = getProducerProperties(JsonSerializer.class.getName());
-        KafkaProducer<String, Peak> producer = new KafkaProducer<>(producerProps);
+        KafkaProducer<String, Feature> producer = new KafkaProducer<>(producerProps);
 
-        String filePath = "data/output-peaks.json";
+        String peaksFilePath = "data/output-peaks.json";
+        String hutsFilePath = "data/output-huts.json";
+        String wellsFilePath = "data/output-wells.json";
+
         ObjectMapper objectMapper = new ObjectMapper();
 
         try {
-            PeakData peakData = objectMapper.readValue(new File(filePath), PeakData.class);
+            List<Peak> peakData = objectMapper.readValue(new File(peaksFilePath), PeakData.class).features();
+            List<Hut> hutData = objectMapper.readValue(new File(hutsFilePath), HutData.class).features();
+            List<Well> wellData = objectMapper.readValue(new File(wellsFilePath), WellData.class).features();
 
-            List<Peak> peaks = peakData.features();
-
-            for (Peak peak : peaks) {
+            for (Peak peak : peakData) {
                 System.out.println("Sending: " + peak);
-                ProducerRecord<String, Peak> record = new ProducerRecord<>(FEATURES_V1.getValue(), peak.getId(), peak);
+                ProducerRecord<String, Feature> record = new ProducerRecord<>(FEATURES_V1.getValue(), peak.getId(), peak);
                 producer.send(record);
             }
 
+            for (Hut hut : hutData) {
+                System.out.println("Sending: " + hut);
+                ProducerRecord<String, Feature> record = new ProducerRecord<>(FEATURES_V1.getValue(), hut.getId(), hut);
+                producer.send(record);
+            }
+
+            for (Well well : wellData) {
+                System.out.println("Sending: " + well);
+                ProducerRecord<String, Feature> record = new ProducerRecord<>(FEATURES_V1.getValue(), well.getId(), well);
+                producer.send(record);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
