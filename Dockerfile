@@ -5,14 +5,14 @@ WORKDIR /app
 COPY pom.xml .
 COPY src/ src/
 
-RUN mvn clean package -DskipTests -T8C
+RUN mvn clean package -DskipTests
 
 FROM sapmachine:17-jre-headless-ubuntu-focal
 
 WORKDIR /app
 
 COPY --from=build /app/target/*.jar app.jar
-COPY data/output-peaks.json /app/data/output-peaks.json
+COPY data/output-features.json /app/data/output-features.json
 
 EXPOSE 8081
 

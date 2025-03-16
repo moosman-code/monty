@@ -3,205 +3,572 @@
     {
       "id": "node/26862677",
       "name": "Cherni Vrah",
-      "coordinates": [23.2793407, 42.5630927],
+      "coordinates": [
+        23.2793407,
+        42.5630927
+      ],
       "type": "peak",
       "fact": "The highest peak in Vitosha, popular for skiing and hiking."
     },
     {
       "id": "node/274078085",
       "name": "Skoparnika",
-      "coordinates": [23.2937747, 42.5507576],
+      "coordinates": [
+        23.2937747,
+        42.5507576
+      ],
       "type": "peak",
       "fact": "Famous for its beautiful views of Sofia and the surrounding mountain peaks."
     },
     {
       "id": "node/274078118",
       "name": "Golyam Kupen",
-      "coordinates": [23.3187547, 42.5509365],
+      "coordinates": [
+        23.3187547,
+        42.5509365
+      ],
       "type": "peak",
       "fact": "Popular among tourists for its easy ascent and picturesque nature."
     },
     {
       "id": "node/274078133",
       "name": "Ushite",
-      "coordinates": [23.2743482, 42.6068241],
+      "coordinates": [
+        23.2743482,
+        42.6068241
+      ],
       "type": "peak",
       "fact": "Known for its rock formations resembling ears."
     },
     {
       "id": "node/274078176",
       "name": "Malak Rezen",
-      "coordinates": [23.2886901, 42.5727353],
+      "coordinates": [
+        23.2886901,
+        42.5727353
+      ],
       "type": "peak",
       "fact": "A lower neighbor of Golyam Rezen, offering great mountain views."
     },
     {
       "id": "node/274078190",
       "name": "Chernata Skala",
-      "coordinates": [23.25874, 42.6058188],
+      "coordinates": [
+        23.25874,
+        42.6058188
+      ],
       "type": "peak",
       "fact": "Known for its dark rocks and scenic views."
     },
     {
       "id": "node/1263755214",
       "name": "Luvcheto",
-      "coordinates": [23.278357, 42.576208],
+      "coordinates": [
+        23.278357,
+        42.576208
+      ],
       "type": "peak",
       "fact": "A small peak shaped like a lion's head."
     },
     {
       "id": "node/2833539142",
       "name": "Samara",
-      "coordinates": [23.2588459, 42.5637309],
+      "coordinates": [
+        23.2588459,
+        42.5637309
+      ],
       "type": "peak",
       "fact": "Famous for its steep slopes and views of Sofia."
     },
     {
       "id": "node/2837681572",
       "name": "Gola Mogila",
-      "coordinates": [23.2225718, 42.5606268],
+      "coordinates": [
+        23.2225718,
+        42.5606268
+      ],
       "type": "peak",
       "fact": "A low peak suitable for easy hikes and walks."
     },
     {
       "id": "node/2837681576",
       "name": "Nakev Kamak",
-      "coordinates": [23.22621, 42.5577728],
+      "coordinates": [
+        23.22621,
+        42.5577728
+      ],
       "type": "peak",
       "fact": "A small peak with interesting rock formations."
     },
     {
       "id": "node/2848780801",
       "name": "Golyam Kapral",
-      "coordinates": [23.3544482, 42.5707525],
+      "coordinates": [
+        23.3544482,
+        42.5707525
+      ],
       "type": "peak",
       "fact": "A low peak popular for family hikes and picnics."
     },
     {
       "id": "node/2848780802",
       "name": "Kukulya",
-      "coordinates": [23.3409708, 42.5570193],
+      "coordinates": [
+        23.3409708,
+        42.5570193
+      ],
       "type": "peak",
       "fact": "Known for its rounded shapes and greenery."
     },
     {
       "id": "node/2848780803",
       "name": "Malak Kapral",
-      "coordinates": [23.3512321, 42.573268],
+      "coordinates": [
+        23.3512321,
+        42.573268
+      ],
       "type": "peak",
       "fact": "A smaller neighbor of Golyam Kapral, suitable for walks."
     },
     {
       "id": "node/2848780804",
       "name": "Malak Lygator",
-      "coordinates": [23.3552849, 42.5610577],
+      "coordinates": [
+        23.3552849,
+        42.5610577
+      ],
       "type": "peak",
       "fact": "A low peak, ideal for short hiking routes."
     },
     {
       "id": "node/3001939533",
       "name": "Kamen Del",
-      "coordinates": [23.2765863, 42.6119848],
+      "coordinates": [
+        23.2765863,
+        42.6119848
+      ],
       "type": "peak",
       "fact": "Known for its rocky slopes and views."
     },
     {
       "id": "node/3959502537",
       "name": "Sredets",
-      "coordinates": [23.2653653, 42.5880787],
+      "coordinates": [
+        23.2653653,
+        42.5880787
+      ],
       "type": "peak",
       "fact": "A central peak offering panoramic views of Vitosha."
     },
     {
       "id": "node/4775002826",
       "name": "Goli Vrah",
-      "coordinates": [23.288899, 42.5928399],
+      "coordinates": [
+        23.288899,
+        42.5928399
+      ],
       "type": "peak",
       "fact": "Known for its large, open spaces."
     },
     {
       "id": "node/6435733393",
       "name": "Komini",
-      "coordinates": [23.2886873, 42.6020205],
+      "coordinates": [
+        23.2886873,
+        42.6020205
+      ],
       "type": "peak",
       "fact": "Famous for its rock formations resembling chimneys."
     },
     {
       "id": "node/7526890742",
       "name": "Kopitoto",
-      "coordinates": [23.2440095, 42.6371163],
+      "coordinates": [
+        23.2440095,
+        42.6371163
+      ],
       "type": "peak",
       "fact": "A small peak shaped like a hoof."
     },
     {
       "id": "node/10548536956",
       "name": "Tsurkva",
-      "coordinates": [23.36209, 42.601132],
+      "coordinates": [
+        23.36209,
+        42.601132
+      ],
       "type": "peak",
       "fact": "Famous for its historical and religious landmarks."
     },
     {
       "id": "node/10548543175",
       "name": "Palilupa",
-      "coordinates": [23.3665532, 42.5695258],
+      "coordinates": [
+        23.3665532,
+        42.5695258
+      ],
       "type": "peak",
       "fact": "A low peak suitable for peaceful walks."
     },
     {
       "id": "node/10548543176",
       "name": "Bogdana",
-      "coordinates": [23.3518439, 42.5779417],
+      "coordinates": [
+        23.3518439,
+        42.5779417
+      ],
       "type": "peak",
       "fact": "Famous for its green meadows and views."
     },
     {
       "id": "node/10550528372",
       "name": "Ostretz",
-      "coordinates": [23.2245072, 42.5828795],
+      "coordinates": [
+        23.2245072,
+        42.5828795
+      ],
       "type": "peak",
       "fact": "Known for its steep slopes and views."
     },
     {
       "id": "node/10550562510",
       "name": "Piperkata",
-      "coordinates": [23.3037545, 42.5709807],
+      "coordinates": [
+        23.3037545,
+        42.5709807
+      ],
       "type": "peak",
       "fact": "A small peak with an interesting shape and views."
     },
     {
       "id": "node/10779120869",
       "name": "Momina Skala",
-      "coordinates": [23.2572694, 42.6385273],
+      "coordinates": [
+        23.2572694,
+        42.6385273
+      ],
       "type": "peak",
       "fact": "Known for its legends and beautiful views."
     },
     {
       "id": "node/10779120870",
       "name": "Sui Vrah",
-      "coordinates": [23.2638945, 42.6354468],
+      "coordinates": [
+        23.2638945,
+        42.6354468
+      ],
       "type": "peak",
       "fact": "A low peak, popular for light walks and picnics."
     },
     {
       "id": "node/10836871399",
       "name": "Ostritsa",
-      "coordinates": [23.3597366, 42.5539971],
+      "coordinates": [
+        23.3597366,
+        42.5539971
+      ],
       "type": "peak",
       "fact": "Known for its steep slopes and views."
     },
     {
       "id": "node/10944312205",
       "name": "Vladaiski Cherni Vrah",
-      "coordinates": [23.2218427, 42.600882],
+      "coordinates": [
+        23.2218427,
+        42.600882
+      ],
       "type": "peak",
       "fact": "Famous for its dark rocks and views."
     },
     {
       "id": "node/11967089748",
       "name": "Balabana",
-      "coordinates": [23.2544879, 42.6120671],
+      "coordinates": [
+        23.2544879,
+        42.6120671
+      ],
       "type": "peak",
       "fact": "Offers panoramic views of the mountain valleys."
+    },
+    {
+      "id": "node/274090337",
+      "name": "h. Trendafila",
+      "type": "alpine_hut",
+      "coordinates": [
+        23.2248564,
+        42.5948516
+      ],
+      "fact": ""
+    },
+    {
+      "id": "node/274090342",
+      "name": "h. Severina",
+      "type": "alpine_hut",
+      "coordinates": [
+        23.3184336,
+        42.5873953
+      ],
+      "fact": ""
+    },
+    {
+      "id": "node/1906562254",
+      "name": "h. Artistite",
+      "type": "alpine_hut",
+      "coordinates": [
+        23.2321731,
+        42.6031973
+      ],
+      "fact": ""
+    },
+    {
+      "id": "node/2570450275",
+      "name": "PD Radio",
+      "type": "alpine_hut",
+      "coordinates": [
+        23.2328341,
+        42.603578
+      ],
+      "fact": ""
+    },
+    {
+      "id": "node/3911059351",
+      "name": "h. Ofeliite",
+      "type": "alpine_hut",
+      "coordinates": [
+        23.2349593,
+        42.5980421
+      ],
+      "fact": ""
+    },
+    {
+      "id": "node/3911083559",
+      "name": "h. Pancho Tomov",
+      "type": "alpine_hut",
+      "coordinates": [
+        23.2336167,
+        42.6022753
+      ],
+      "fact": ""
+    },
+    {
+      "id": "node/4029040909",
+      "name": "Kamenno zdanie",
+      "type": "alpine_hut",
+      "coordinates": [
+        23.2600422,
+        42.6112075
+      ],
+      "fact": ""
+    },
+    {
+      "id": "node/4641743876",
+      "name": "h. Filharmoniya",
+      "type": "alpine_hut",
+      "coordinates": [
+        23.2218007,
+        42.5915413
+      ],
+      "fact": ""
+    },
+    {
+      "id": "node/8779907627",
+      "name": "h. Planinec",
+      "type": "alpine_hut",
+      "coordinates": [
+        23.2398157,
+        42.6243002
+      ],
+      "fact": ""
+    },
+    {
+      "id": "node/300981045",
+      "type": "well",
+      "name": "",
+      "fact": "",
+      "coordinates": [
+        23.2906,
+        42.56904
+      ]
+    },
+    {
+      "id": "node/300981080",
+      "type": "well",
+      "name": "",
+      "fact": "",
+      "coordinates": [
+        23.315727,
+        42.5837325
+      ]
+    },
+    {
+      "id": "node/300981261",
+      "type": "well",
+      "name": "",
+      "fact": "",
+      "coordinates": [
+        23.319928,
+        42.606134
+      ]
+    },
+    {
+      "id": "node/300981352",
+      "type": "well",
+      "name": "",
+      "fact": "",
+      "coordinates": [
+        23.28218,
+        42.6030545
+      ]
+    },
+    {
+      "id": "node/300981473",
+      "type": "well",
+      "name": "",
+      "fact": "",
+      "coordinates": [
+        23.2309417,
+        42.6168069
+      ]
+    },
+    {
+      "id": "node/300981475",
+      "type": "well",
+      "name": "",
+      "fact": "",
+      "coordinates": [
+        23.29065,
+        42.58847
+      ]
+    },
+    {
+      "id": "node/569115643",
+      "type": "well",
+      "name": "",
+      "fact": "",
+      "coordinates": [
+        23.2656542,
+        42.6447735
+      ]
+    },
+    {
+      "id": "node/582890280",
+      "type": "well",
+      "name": "",
+      "fact": "",
+      "coordinates": [
+        23.2669979,
+        42.6468699
+      ]
+    },
+    {
+      "id": "node/671701531",
+      "type": "well",
+      "name": "",
+      "fact": "",
+      "coordinates": [
+        23.2322519,
+        42.6131363
+      ]
+    },
+    {
+      "id": "node/685954219",
+      "type": "well",
+      "name": "",
+      "fact": "",
+      "coordinates": [
+        23.2596674,
+        42.6437926
+      ]
+    },
+    {
+      "id": "node/729074126",
+      "type": "well",
+      "name": "",
+      "fact": "",
+      "coordinates": [
+        23.298707,
+        42.6191068
+      ]
+    },
+    {
+      "id": "node/800517709",
+      "type": "well",
+      "name": "",
+      "fact": "",
+      "coordinates": [
+        23.2997658,
+        42.616525
+      ]
+    },
+    {
+      "id": "node/812072248",
+      "type": "well",
+      "name": "",
+      "fact": "",
+      "coordinates": [
+        23.2577082,
+        42.6275486
+      ]
+    },
+    {
+      "id": "node/823329627",
+      "type": "well",
+      "name": "",
+      "fact": "",
+      "coordinates": [
+        23.2212176,
+        42.6158753
+      ]
+    },
+    {
+      "id": "node/831692833",
+      "type": "well",
+      "name": "",
+      "fact": "",
+      "coordinates": [
+        23.2600729,
+        42.621727
+      ]
+    },
+    {
+      "id": "node/831692912",
+      "type": "well",
+      "name": "",
+      "fact": "",
+      "coordinates": [
+        23.2250511,
+        42.6307798
+      ]
+    },
+    {
+      "id": "node/1529855460",
+      "type": "well",
+      "name": "",
+      "fact": "",
+      "coordinates": [
+        23.2298131,
+        42.5657586
+      ]
+    },
+    {
+      "id": "node/1529938857",
+      "type": "well",
+      "name": "",
+      "fact": "",
+      "coordinates": [
+        23.2252586,
+        42.5628561
+      ]
+    },
+    {
+      "id": "node/1856867720",
+      "type": "well",
+      "name": "",
+      "fact": "",
+      "coordinates": [
+        23.2658919,
+        42.6207061
+      ]
     }
   ]
 }

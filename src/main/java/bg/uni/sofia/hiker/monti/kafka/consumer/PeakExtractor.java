@@ -13,22 +13,21 @@ import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.common.serialization.StringDeserializer;
 
+import bg.uni.sofia.hiker.monti.features.Feature;
 import bg.uni.sofia.hiker.monti.kafka.serde.JsonDeserializer;
-import bg.uni.sofia.hiker.monti.features.Peak;
 
 public class PeakExtractor {
 
-    public Set<Peak> extract() {
+    public Set<Feature> extract() {
 
-        KafkaConsumer<String, Peak> consumer = getStringPeakKafkaConsumer();
+        KafkaConsumer<String, Feature> consumer = getStringPeakKafkaConsumer();
 
-        consumer.subscribe(Collections.singletonList("peaks-v1"));
-        Set<Peak> result = new HashSet<>();
+        consumer.subscribe(Collections.singletonList("features-v1"));
+        Set<Feature> result = new HashSet<>();
 
         try {
-            ConsumerRecords<String, Peak> records = consumer.poll(Duration.ofMillis(10000));
-            System.out.println("%n%n%n%n%n%n%n%n%n%s%n%n%n%n%n%n%n%n%n".formatted(records.count()));
-            for (ConsumerRecord<String, Peak> record : records) {
+            ConsumerRecords<String, Feature> records = consumer.poll(Duration.ofMillis(100));
+            for (ConsumerRecord<String, Feature> record : records) {
                 result.add(record.value());
             }
         } finally {
@@ -38,13 +37,13 @@ public class PeakExtractor {
         return result;
     }
 
-    private static KafkaConsumer<String, Peak> getStringPeakKafkaConsumer() {
+    private static KafkaConsumer<String, Feature> getStringPeakKafkaConsumer() {
         Properties props = new Properties();
         props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "kafka:9092");
         props.put(ConsumerConfig.GROUP_ID_CONFIG, "my-consumer-group-" + UUID.randomUUID());
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class.getName());
-        props.put("value.deserializer.type", Peak.class);
+        props.put("value.deserializer.type", Feature.class);
         props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
 
         return new KafkaConsumer<>(props);

@@ -22,34 +22,19 @@ public class JsonFileToFeature {
         Properties producerProps = getProducerProperties(JsonSerializer.class.getName());
         KafkaProducer<String, Feature> producer = new KafkaProducer<>(producerProps);
 
-        String peaksFilePath = "data/output-peaks.json";
-        String hutsFilePath = "data/output-huts.json";
-        String wellsFilePath = "data/output-wells.json";
+        String featureFilePath = "data/output-features.json";
 
         ObjectMapper objectMapper = new ObjectMapper();
 
         try {
-            List<Peak> peakData = objectMapper.readValue(new File(peaksFilePath), PeakData.class).features();
-            List<Hut> hutData = objectMapper.readValue(new File(hutsFilePath), HutData.class).features();
-            List<Well> wellData = objectMapper.readValue(new File(wellsFilePath), WellData.class).features();
+            List<Feature> featureData = objectMapper.readValue(new File(featureFilePath), FeatureData.class).features();
 
-            for (Peak peak : peakData) {
-                System.out.println("Sending: " + peak);
-                ProducerRecord<String, Feature> record = new ProducerRecord<>(FEATURES_V1.getValue(), peak.getId(), peak);
+            for (Feature feature : featureData) {
+                System.out.println("Sending: " + feature);
+                ProducerRecord<String, Feature> record = new ProducerRecord<>(FEATURES_V1.getValue(), feature.id(), feature);
                 producer.send(record);
             }
 
-            for (Hut hut : hutData) {
-                System.out.println("Sending: " + hut);
-                ProducerRecord<String, Feature> record = new ProducerRecord<>(FEATURES_V1.getValue(), hut.getId(), hut);
-                producer.send(record);
-            }
-
-            for (Well well : wellData) {
-                System.out.println("Sending: " + well);
-                ProducerRecord<String, Feature> record = new ProducerRecord<>(FEATURES_V1.getValue(), well.getId(), well);
-                producer.send(record);
-            }
         } catch (Exception e) {
             e.printStackTrace();
         }
