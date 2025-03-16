@@ -17,7 +17,7 @@ import bg.uni.sofia.hiker.monti.features.Feature;
 import bg.uni.sofia.hiker.monti.kafka.serde.JsonDeserializer;
 import static bg.uni.sofia.hiker.monti.kafka.topic.TopicName.FEATURES_V1;
 
-public class PeakExtractor {
+public class FeatureExtractor {
 
     public Set<Feature> extract() {
 
@@ -27,7 +27,7 @@ public class PeakExtractor {
         Set<Feature> result = new HashSet<>();
 
         try {
-            ConsumerRecords<String, Feature> records = consumer.poll(Duration.ofMillis(10000));
+            ConsumerRecords<String, Feature> records = consumer.poll(Duration.ofMillis(30000));
             for (ConsumerRecord<String, Feature> record : records) {
                 result.add(record.value());
             }
@@ -41,7 +41,7 @@ public class PeakExtractor {
     private static KafkaConsumer<String, Feature> getStringPeakKafkaConsumer() {
         Properties props = new Properties();
         props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "kafka:9092");
-        props.put(ConsumerConfig.GROUP_ID_CONFIG, "my-consumer-group");
+        props.put(ConsumerConfig.GROUP_ID_CONFIG, "my-consumer-group-" + UUID.randomUUID());
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class.getName());
         props.put("value.deserializer.type", Feature.class);
