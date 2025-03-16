@@ -11,11 +11,9 @@ public class JsonDeserializer<T> implements Deserializer<T> {
     private final ObjectMapper objectMapper = new ObjectMapper();
     private Class<T> type;
 
-    // No-argument constructor required by Kafka
     public JsonDeserializer() {
     }
 
-    // Constructor with type parameter (optional, for manual instantiation)
     public JsonDeserializer(Class<T> type) {
         this.type = type;
     }
@@ -34,7 +32,6 @@ public class JsonDeserializer<T> implements Deserializer<T> {
 
     @Override
     public void configure(Map<String, ?> configs, boolean isKey) {
-        // Extract the type from the configuration
         if (configs.containsKey("value.deserializer.type")) {
             this.type = (Class<T>) configs.get("value.deserializer.type");
         } else {
