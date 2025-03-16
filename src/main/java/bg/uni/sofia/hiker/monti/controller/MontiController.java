@@ -25,7 +25,7 @@ public class MontiController {
                                     @RequestParam String longitude,
                                     @RequestParam String radius) {
         Set<Feature> extracted = featureExtractor.extract();
-        featureFilter.filter(Double.parseDouble(latitude),
+        return featureFilter.filter(Double.parseDouble(latitude),
                              Double.parseDouble(longitude),
                              Double.parseDouble(radius),
                              extracted);
