@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>bg.uni.sofia.hiker</groupId>
 	<artifactId>monti</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>Monti-0.0.1-SNAPSHOT</version>
 	<name>Monti</name>
 	<description>Peak Motion&apos;s project for FMI Codes 2025</description>
 	<url/>

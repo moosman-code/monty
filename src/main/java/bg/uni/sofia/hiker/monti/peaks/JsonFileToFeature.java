@@ -1,6 +1,5 @@
 package bg.uni.sofia.hiker.monti.peaks;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.util.List;
 import java.util.Properties;
@@ -8,24 +7,25 @@ import java.util.Properties;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;
-import org.apache.kafka.common.serialization.Serdes;
 import org.apache.kafka.common.serialization.StringSerializer;
-import org.apache.kafka.streams.KafkaStreams;
-import org.apache.kafka.streams.StreamsBuilder;
-import org.apache.kafka.streams.kstream.Consumed;
-import org.apache.kafka.streams.kstream.KStream;
-import org.apache.kafka.streams.kstream.Produced;
-import org.springframework.kafka.support.serializer.JsonSerde;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import bg.uni.sofia.hiker.monti.kafka.serde.JsonSerializer;
 import bg.uni.sofia.hiker.monti.kafka.topic.TopicName;
+import static bg.uni.sofia.hiker.monti.kafka.topic.TopicName.PEAKS_V1;
 
-public class JsonFileToPeak {
+public class JsonFileToFeature {
 
-    public static final String BOOTSTRAP_SERVER = "localhost:9092";
+    public static final String BOOTSTRAP_SERVER = "kafka:9092";
 
-    public void init() {
+    public void initTopicData(TopicName topicName) {
+        switch (topicName) {
+            case PEAKS_V1 -> initPeakData();
+        }
+    }
 
+    public void initPeakData() {
         Properties producerProps = getProducerProperties(JsonSerializer.class.getName());
         KafkaProducer<String, Peak> producer = new KafkaProducer<>(producerProps);
 
@@ -39,7 +39,7 @@ public class JsonFileToPeak {
 
             for (Peak peak : peaks) {
                 System.out.println("Sending: " + peak);
-                ProducerRecord<String, Peak> record = new ProducerRecord<>(TopicName.SUGGESTED_PLACES.getValue(), peak.id(), peak);
+                ProducerRecord<String, Peak> record = new ProducerRecord<>(PEAKS_V1.getValue(), peak.id(), peak);
                 producer.send(record);
             }
 

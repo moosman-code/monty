@@ -2,267 +2,206 @@
   "features": [
     {
       "id": "node/26862677",
-      "ele": "2290",
-      "name": "Черни връх",
+      "name": "Cherni Vrah",
       "coordinates": [23.2793407, 42.5630927],
       "type": "peak",
-      "fact": "Най-високият връх във Витоша, популярен за ски и пешеходен туризъм."
+      "fact": "The highest peak in Vitosha, popular for skiing and hiking."
     },
     {
       "id": "node/274078085",
-      "ele": "2226.5",
-      "name": "Скопарника",
+      "name": "Skoparnika",
       "coordinates": [23.2937747, 42.5507576],
       "type": "peak",
-      "fact": "Известен с красивите гледки към София и околните планински върхове."
+      "fact": "Famous for its beautiful views of Sofia and the surrounding mountain peaks."
     },
     {
       "id": "node/274078118",
-      "ele": "1942",
-      "name": "Голям Купен",
+      "name": "Golyam Kupen",
       "coordinates": [23.3187547, 42.5509365],
       "type": "peak",
-      "fact": "Популярен сред туристите заради лесното изкачване и живописната природа."
+      "fact": "Popular among tourists for its easy ascent and picturesque nature."
     },
     {
       "id": "node/274078133",
-      "ele": "1901.4",
-      "name": "Ушите",
+      "name": "Ushite",
       "coordinates": [23.2743482, 42.6068241],
       "type": "peak",
-      "fact": "Известен със своите скални образувания, наподобяващи уши."
+      "fact": "Known for its rock formations resembling ears."
     },
     {
       "id": "node/274078176",
-      "ele": "2182.4",
-      "name": "Малък Резен",
+      "name": "Malak Rezen",
       "coordinates": [23.2886901, 42.5727353],
       "type": "peak",
-      "fact": "По-нисък съсед на Голям Резен, предлагащ страхотни гледки към планина."
+      "fact": "A lower neighbor of Golyam Rezen, offering great mountain views."
     },
     {
       "id": "node/274078190",
-      "ele": "1868.7",
-      "name": "Черната скала",
+      "name": "Chernata Skala",
       "coordinates": [23.25874, 42.6058188],
       "type": "peak",
-      "fact": "Известен със своите тъмни скали и живописни гледки."
+      "fact": "Known for its dark rocks and scenic views."
     },
     {
       "id": "node/1263755214",
-      "ele": "2057.3",
-      "name": "Лъвчето",
+      "name": "Luvcheto",
       "coordinates": [23.278357, 42.576208],
       "type": "peak",
-      "fact": "Малък връх с форма, напомняща лъвска глава."
+      "fact": "A small peak shaped like a lion's head."
     },
     {
       "id": "node/2833539142",
-      "ele": "2103.6",
-      "name": "Самара",
+      "name": "Samara",
       "coordinates": [23.2588459, 42.5637309],
       "type": "peak",
-      "fact": "Известен със своите стръмни склонове и гледки към София."
+      "fact": "Famous for its steep slopes and views of Sofia."
     },
     {
       "id": "node/2837681572",
-      "ele": "1562.8",
-      "name": "Гола могила",
+      "name": "Gola Mogila",
       "coordinates": [23.2225718, 42.5606268],
       "type": "peak",
-      "fact": "Нисък връх, подходящ за лесно изкачване и разходки."
+      "fact": "A low peak suitable for easy hikes and walks."
     },
     {
       "id": "node/2837681576",
-      "ele": "1520.6",
-      "name": "Накев камък",
+      "name": "Nakev Kamak",
       "coordinates": [23.22621, 42.5577728],
       "type": "peak",
-      "fact": "Малък връх с интересни скални образувания."
+      "fact": "A small peak with interesting rock formations."
     },
     {
       "id": "node/2848780801",
-      "ele": "1030.6",
-      "name": "Голям Капрал",
+      "name": "Golyam Kapral",
       "coordinates": [23.3544482, 42.5707525],
       "type": "peak",
-      "fact": "Нисък връх, популярен за семейни разходки и пикници."
+      "fact": "A low peak popular for family hikes and picnics."
     },
     {
       "id": "node/2848780802",
-      "ele": "1360.4",
-      "name": "Кукуля",
+      "name": "Kukulya",
       "coordinates": [23.3409708, 42.5570193],
       "type": "peak",
-      "fact": "Известен със своите заоблени форми и зеленина."
+      "fact": "Known for its rounded shapes and greenery."
     },
     {
       "id": "node/2848780803",
-      "ele": "1025.5",
-      "name": "Малък Капрал",
+      "name": "Malak Kapral",
       "coordinates": [23.3512321, 42.573268],
       "type": "peak",
-      "fact": "По-малък съсед на Голям Капрал, подходящ за разходки."
+      "fact": "A smaller neighbor of Golyam Kapral, suitable for walks."
     },
     {
       "id": "node/2848780804",
-      "ele": "1069.8",
-      "name": "Малък Лъгатор",
+      "name": "Malak Lygator",
       "coordinates": [23.3552849, 42.5610577],
       "type": "peak",
-      "fact": "Нисък връх, идеален за къси туристически маршрути."
+      "fact": "A low peak, ideal for short hiking routes."
     },
     {
       "id": "node/3001939533",
-      "ele": "1860.3",
-      "name": "Камен дел",
+      "name": "Kamen Del",
       "coordinates": [23.2765863, 42.6119848],
       "type": "peak",
-      "fact": "Известен със своите каменисти склонове и гледки."
+      "fact": "Known for its rocky slopes and views."
     },
     {
       "id": "node/3959502537",
-      "ele": "1968.4",
-      "name": "Средец",
+      "name": "Sredets",
       "coordinates": [23.2653653, 42.5880787],
       "type": "peak",
-      "fact": "Централен връх, предлагащ панорамни гледки към Витоша."
+      "fact": "A central peak offering panoramic views of Vitosha."
     },
     {
       "id": "node/4775002826",
-      "ele": "1830",
-      "name": "Голи връх",
+      "name": "Goli Vrah",
       "coordinates": [23.288899, 42.5928399],
       "type": "peak",
-      "fact": "Известен със своите големи, открити пространства."
+      "fact": "Known for its large, open spaces."
     },
     {
       "id": "node/6435733393",
-      "ele": "1670",
-      "name": "Комини",
+      "name": "Komini",
       "coordinates": [23.2886873, 42.6020205],
       "type": "peak",
-      "fact": "Известен със своите скални образувания, наподобяващи комини."
+      "fact": "Famous for its rock formations resembling chimneys."
     },
     {
       "id": "node/7526890742",
-      "ele": "1347",
-      "name": "Копитото",
+      "name": "Kopitoto",
       "coordinates": [23.2440095, 42.6371163],
       "type": "peak",
-      "fact": "Малък връх с форма, наподобяваща копито."
-    },
-    {
-      "id": "node/9210048930",
-      "ele": "1348",
-      "name": "Копитото",
-      "coordinates": [23.2439917, 42.6371234],
-      "type": "peak",
-      "fact": "Малък връх с уникална форма, наподобяваща копито."
-    },
-    {
-      "id": "node/10548536955",
-      "ele": "968",
-      "name": "Ушите",
-      "coordinates": [23.3565002, 42.5922116],
-      "type": "peak",
-      "fact": "Нисък връх с интересни скални образувания."
+      "fact": "A small peak shaped like a hoof."
     },
     {
       "id": "node/10548536956",
-      "ele": "952",
-      "name": "Църква",
+      "name": "Tsurkva",
       "coordinates": [23.36209, 42.601132],
       "type": "peak",
-      "fact": "Известен със своите исторически и религиозни забележителности."
+      "fact": "Famous for its historical and religious landmarks."
     },
     {
       "id": "node/10548543175",
-      "ele": "931",
-      "name": "Палилупа",
+      "name": "Palilupa",
       "coordinates": [23.3665532, 42.5695258],
       "type": "peak",
-      "fact": "Нисък връх, подходящ за спокойни разходки."
+      "fact": "A low peak suitable for peaceful walks."
     },
     {
       "id": "node/10548543176",
-      "ele": "1026",
-      "name": "Богдана",
+      "name": "Bogdana",
       "coordinates": [23.3518439, 42.5779417],
       "type": "peak",
-      "fact": "Известен със своите зелени поляни и гледки."
+      "fact": "Famous for its green meadows and views."
     },
     {
       "id": "node/10550528372",
-      "ele": "1835",
-      "name": "Острец",
+      "name": "Ostretz",
       "coordinates": [23.2245072, 42.5828795],
       "type": "peak",
-      "fact": "Известен със своите стръмни склонове и гледки."
+      "fact": "Known for its steep slopes and views."
     },
     {
       "id": "node/10550562510",
-      "ele": "1820",
-      "name": "Пиперката",
+      "name": "Piperkata",
       "coordinates": [23.3037545, 42.5709807],
       "type": "peak",
-      "fact": "Малък връх с интересна форма и гледки."
+      "fact": "A small peak with an interesting shape and views."
     },
     {
       "id": "node/10779120869",
-      "ele": "1067",
-      "name": "Момина скала",
+      "name": "Momina Skala",
       "coordinates": [23.2572694, 42.6385273],
       "type": "peak",
-      "fact": "Известен със своите легенди и красиви гледки."
+      "fact": "Known for its legends and beautiful views."
     },
     {
       "id": "node/10779120870",
-      "ele": "1145",
-      "name": "Суи връх",
+      "name": "Sui Vrah",
       "coordinates": [23.2638945, 42.6354468],
       "type": "peak",
-      "fact": "Нисък връх, популярен за леки разходки и пикници."
+      "fact": "A low peak, popular for light walks and picnics."
     },
     {
       "id": "node/10836871399",
-      "ele": "1087",
-      "name": "Острица",
+      "name": "Ostritsa",
       "coordinates": [23.3597366, 42.5539971],
       "type": "peak",
-      "fact": "Известен със своите стръмни склонове и гледки."
+      "fact": "Known for its steep slopes and views."
     },
     {
       "id": "node/10944312205",
-      "ele": "1641",
-      "name": "Владайски Черни връх",
+      "name": "Vladaiski Cherni Vrah",
       "coordinates": [23.2218427, 42.600882],
       "type": "peak",
-      "fact": "Известен със своите тъмни скали и гледки."
-    },
-    {
-      "id": "node/11966792923",
-      "ele": "1341",
-      "name": "Гробища",
-      "coordinates": [23.2270068, 42.6165655],
-      "type": "peak",
-      "fact": "Известен със своите исторически и културни забележителности."
+      "fact": "Famous for its dark rocks and views."
     },
     {
       "id": "node/11967089748",
-      "ele": "1728",
-      "name": "Балабана",
+      "name": "Balabana",
       "coordinates": [23.2544879, 42.6120671],
       "type": "peak",
-      "fact": "Предлага панорамни гледки към планинските долини."
-    },
-    {
-      "id": "node/12052746990",
-      "ele": "2028",
-      "name": "Стената",
-      "coordinates": [23.2839729, 42.5802841],
-      "type": "peak",
-      "fact": "Известен със своите стръмни скали и гледки."
+      "fact": "Offers panoramic views of the mountain valleys."
     }
   ]
 }
